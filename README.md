@@ -130,4 +130,5 @@ WARNING: 紐付け成功率が低い (XX%)
 - **開発者**: Takuya Tsuchiya
 - **AI支援**: Claude Code (Anthropic)
 - **作成日**: 2025年8月1日
+- **命名統一完了**: 2025年8月1日 (arc→ark全体統一)
 - **リポジトリ**: https://github.com/TakuyaTsuchiya/ark-late-payment-update
