@@ -1,0 +1,4 @@
+# ArcLatePaymentUpdate - Dependencies
+# 既存システム（ark_import_new_data）と統一したバージョン
+pandas==2.0.3
+chardet==5.2.0
