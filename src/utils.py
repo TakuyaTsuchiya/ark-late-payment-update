@@ -1,5 +1,5 @@
 """
-ArcLatePaymentUpdate Utilities
+ArkLatePaymentUpdate Utilities
 共通ユーティリティ・ヘルパー関数
 """
 

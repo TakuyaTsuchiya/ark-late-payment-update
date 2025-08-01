@@ -1,5 +1,5 @@
 """
-ArcLatePaymentUpdate Configuration
+ArkLatePaymentUpdate Configuration
 設定・マッピング・定数定義
 """
 
@@ -7,11 +7,11 @@ import os
 from datetime import datetime
 
 # ファイル名パターン
-ARC_CSV_PATTERN = "【アーク継続中】②残債取込用CSV_*.csv"
+ARK_CSV_PATTERN = "【アーク継続中】②残債取込用CSV_*.csv"
 CONTRACT_LIST_PATTERN = "ContractList*.csv"
 
 # カラムマッピング - アーク残債CSV
-ARC_COLUMNS = {
+ARK_COLUMNS = {
     'contract_number': '契約番号',
     'outstanding_amount': '未収金額合計',
     'outstanding_guarantee': '未収保証料残（顧客請求分）',

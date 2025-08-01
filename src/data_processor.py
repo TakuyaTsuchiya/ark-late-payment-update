@@ -1,12 +1,12 @@
 """
-ArcLatePaymentUpdate Data Processor  
+ArkLatePaymentUpdate Data Processor  
 データ紐付け・変換処理
 """
 
 import pandas as pd
 from typing import Tuple, Dict, Any, Optional
 from config import (
-    ARC_COLUMNS,
+    ARK_COLUMNS,
     CONTRACT_COLUMNS,
     OUTPUT_COLUMNS,
     WARN_UNMATCH_RATIO,
@@ -108,8 +108,8 @@ def merge_dataframes(arc_df: pd.DataFrame, contract_df: pd.DataFrame) -> Tuple[p
         
         # 必須カラム確認
         arc_required = {
-            'contract_number': ARC_COLUMNS['contract_number'],
-            'outstanding_amount': ARC_COLUMNS['outstanding_amount']
+            'contract_number': ARK_COLUMNS['contract_number'],
+            'outstanding_amount': ARK_COLUMNS['outstanding_amount']
         }
         
         contract_required = {
@@ -132,14 +132,14 @@ def merge_dataframes(arc_df: pd.DataFrame, contract_df: pd.DataFrame) -> Tuple[p
         print(f"  ContractList: {original_contract_count:,}件")
         
         # キー項目の正規化
-        arc_normalized = normalize_key_column(arc_df, ARC_COLUMNS['contract_number'])
+        arc_normalized = normalize_key_column(arc_df, ARK_COLUMNS['contract_number'])
         contract_normalized = normalize_key_column(contract_df, CONTRACT_COLUMNS['inheritance_number'])
         
         # 結合実行 (Inner Join)
         merged_df = pd.merge(
             arc_normalized,
             contract_normalized,
-            left_on=ARC_COLUMNS['contract_number'],
+            left_on=ARK_COLUMNS['contract_number'],
             right_on=CONTRACT_COLUMNS['inheritance_number'],
             how='inner',
             suffixes=('_arc', '_contract')
@@ -192,7 +192,7 @@ def extract_required_columns(merged_df: pd.DataFrame) -> pd.DataFrame:
         
         # 必要なカラムの確認
         management_col = CONTRACT_COLUMNS['management_number']
-        outstanding_col = ARC_COLUMNS['outstanding_amount']
+        outstanding_col = ARK_COLUMNS['outstanding_amount']
         
         if management_col not in merged_df.columns:
             raise KeyError(f"管理番号カラムが見つかりません: {management_col}")

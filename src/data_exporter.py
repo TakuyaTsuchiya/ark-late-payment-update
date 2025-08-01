@@ -1,5 +1,5 @@
 """
-ArcLatePaymentUpdate Data Exporter
+ArkLatePaymentUpdate Data Exporter
 出力ファイル生成・フォーマット処理
 """
 
@@ -160,7 +160,7 @@ def generate_processing_report(stats: Dict[str, Any], output_path: str) -> str:
         # レポート内容生成
         report_content = []
         report_content.append("=" * 60)
-        report_content.append("ArcLatePaymentUpdate 処理レポート")
+        report_content.append("ArkLatePaymentUpdate 処理レポート")
         report_content.append("=" * 60)
         report_content.append(f"実行日時: {datetime.now().strftime('%Y/%m/%d %H:%M:%S')}")
         report_content.append("")

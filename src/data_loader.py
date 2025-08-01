@@ -1,5 +1,5 @@
 """
-ArcLatePaymentUpdate Data Loader
+ArkLatePaymentUpdate Data Loader
 ファイル読み込み・エンコーディング自動検出機能
 """
 
@@ -9,7 +9,7 @@ import chardet
 import pandas as pd
 from typing import Tuple, Optional, Dict, Any
 from config import (
-    ARC_CSV_PATTERN, 
+    ARK_CSV_PATTERN, 
     CONTRACT_LIST_PATTERN, 
     ENCODING_CANDIDATES,
     MAX_FILE_SIZE_MB
@@ -136,14 +136,14 @@ def find_input_files(search_directory: str = ".") -> Tuple[Optional[str], Option
         print(f"ファイル検索開始: {os.path.abspath(search_directory)}")
         
         # アーク残債CSVファイル検索
-        arc_pattern = os.path.join(search_directory, ARC_CSV_PATTERN)
+        arc_pattern = os.path.join(search_directory, ARK_CSV_PATTERN)
         arc_files = glob.glob(arc_pattern)
         
         print(f"アーク残債ファイル検索パターン: {arc_pattern}")
         print(f"見つかったファイル: {len(arc_files)}件")
         
         if not arc_files:
-            print(f"アーク残債ファイルが見つかりません: {ARC_CSV_PATTERN}")
+            print(f"アーク残債ファイルが見つかりません: {ARK_CSV_PATTERN}")
             arc_file = None
         else:
             # 最新ファイルを選択（ファイル更新日時ベース）
