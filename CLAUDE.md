@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## プロジェクト概要
 
-**ArcLatePaymentUpdate v1.0** - アーク残債取り込みアプリケーション
+**ArkLatePaymentUpdate v1.0** - アーク残債取り込みアプリケーション
 
 アークから受託した案件の残債データを、ミライル顧客システムに取り込み可能な形式に変換する自動化ツール。2つのCSVファイルを紐付けて、管理番号ベースの残債情報CSVを生成する。
 
@@ -18,7 +18,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## ディレクトリ構造
 
 ```
-arc_late_payment_update/
+ark_late_payment_update/
 ├── README.md                 # プロジェクト概要・使用方法
 ├── CLAUDE.md                 # このファイル - Claude作業指示
 ├── requirements.txt          # Python依存パッケージ
@@ -208,6 +208,7 @@ WARNING: 紐付け成功率が低い (XX%)
 - [x] 詳細処理レポート生成
 - [x] エラーハンドリング・品質チェック
 - [x] コマンドライン引数対応
+- [x] プロジェクト全体のarc→ark命名統一
 
 ### 🧪 動作確認済み
 - ✅ サンプルデータでの正常動作確認
@@ -215,6 +216,7 @@ WARNING: 紐付け成功率が低い (XX%)
 - ✅ データ紐付け処理テスト（80%成功率）
 - ✅ 出力ファイル品質確認
 - ✅ エラーハンドリングテスト
+- ✅ プロジェクト全体の命名統一確認
 
 ### 📊 パフォーマンス実績
 - **処理速度**: 5件/数秒（サンプルデータ）
@@ -227,9 +229,11 @@ WARNING: 紐付け成功率が低い (XX%)
 - **AI支援**: Claude Code (Anthropic)
 - **作成日**: 2025年8月1日
 - **実装完了日**: 2025年8月1日
+- **命名統一完了日**: 2025年8月1日
 - **バージョン**: v1.0.0
-- **リポジトリ**: arc_late_payment_update
-- **初回リリース**: First Commit準備完了
+- **リポジトリ**: https://github.com/TakuyaTsuchiya/ark-late-payment-update
+- **初回リリース**: 完了
+- **命名統一**: arc→ark 全体統一完了
 
 ---
 

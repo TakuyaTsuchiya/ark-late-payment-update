@@ -1,5 +1,5 @@
 """
-ArcLatePaymentUpdate Main Application
+ArkLatePaymentUpdate Main Application
 メインアプリケーション - アーク残債取り込み処理
 """
 
@@ -37,7 +37,7 @@ def main(search_directory: str = ".", custom_output_filename: Optional[str] = No
     """
     try:
         # システム情報表示
-        print_banner("ArcLatePaymentUpdate v1.0", 60)
+        print_banner("ArkLatePaymentUpdate v1.0", 60)
         print("アーク残債取り込みアプリケーション")
         
         sys_info = get_system_info()
@@ -117,7 +117,7 @@ def parse_arguments():
         argparse.Namespace: 解析済み引数
     """
     parser = argparse.ArgumentParser(
-        description="ArcLatePaymentUpdate - アーク残債取り込みアプリケーション",
+        description="ArkLatePaymentUpdate - アーク残債取り込みアプリケーション",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 使用例:
@@ -150,7 +150,7 @@ def parse_arguments():
     parser.add_argument(
         '--version', '-v',
         action='version',
-        version='ArcLatePaymentUpdate v1.0'
+        version='ArkLatePaymentUpdate v1.0'
     )
     
     return parser.parse_args()

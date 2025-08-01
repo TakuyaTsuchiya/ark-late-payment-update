@@ -1,4 +1,4 @@
-# ArcLatePaymentUpdate
+# ArkLatePaymentUpdate
 
 **アーク残債取り込みアプリケーション**
 
@@ -33,7 +33,7 @@
 ### 基本的な使い方
 ```bash
 # プロジェクトディレクトリに移動
-cd arc_late_payment_update
+cd ark_late_payment_update
 
 # 依存パッケージのインストール
 pip install -r requirements.txt
@@ -55,7 +55,7 @@ python src/main.py
 
 ## プロジェクト構造
 ```
-arc_late_payment_update/
+ark_late_payment_update/
 ├── README.md                 # このファイル
 ├── requirements.txt          # Python依存パッケージ
 ├── src/                      # ソースコード
@@ -123,7 +123,12 @@ WARNING: 紐付け成功率が低い (XX%)
 ## ライセンス
 このプロジェクトは内部使用を目的としています。
 
+## 貢献・サポート
+バグ報告や機能要望は[GitHub Issues](https://github.com/TakuyaTsuchiya/ark-late-payment-update/issues)までお願いします。
+
 ## 作成者・メンテナー
 - **開発者**: Takuya Tsuchiya
 - **AI支援**: Claude Code (Anthropic)
 - **作成日**: 2025年8月1日
+- **命名統一完了**: 2025年8月1日 (arc→ark全体統一)
+- **リポジトリ**: https://github.com/TakuyaTsuchiya/ark-late-payment-update
